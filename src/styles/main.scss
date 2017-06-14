@@ -1,0 +1,40 @@
+.App {
+  border-style: solid;
+  display: flex;
+  width: 1410px;
+  height: 840px;
+}
+
+.day {
+  position: relative;
+  .dayHeader {
+    height: 30px;
+    margin: 5px;
+    background-color: darkgrey;
+  }
+  .dayEventsGrid{
+    position: absolute;
+    top: 40px;
+  }
+}
+
+.group {
+  position: absolute;
+  background-color: lightgrey;
+  display: flex;
+}
+
+.event {
+  background-color: darkgreen;
+  position: absolute;
+  margin: 2px;
+}
+
+.column1 {
+  background-color: yellow;
+}
+
+.column1, .column {
+  position: absolute;
+
+}
