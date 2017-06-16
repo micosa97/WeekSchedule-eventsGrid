@@ -4,7 +4,6 @@ import GroupsOfEvents from "./GroupsOfEvents/GroupsOfEvents";
 export default class Day extends React.Component {
   constructor(props){
     super(props);
-    console.log("xd2");
     let list2 = [];
     this.props.events.forEach((e, i) => {
       list2=list2.concat([{"t": "s", "d": (e.h * 60 + e.m), "id":i}]);
@@ -45,10 +44,10 @@ export default class Day extends React.Component {
             <GroupsOfEvents
               min={this.state.groupStartTimes[i]}
               max={this.state.groupEndTimes[i]}
-              top={800*(this.state.groupStartTimes[i]-this.props.min)/(this.props.max-this.props.min)}
+              top={this.props.height*(this.state.groupStartTimes[i]-this.props.min)/(this.props.max-this.props.min)}
               left={0}
               width={this.props.width}
-              height={800*(this.state.groupEndTimes[i]-this.state.groupStartTimes[i])/(this.props.max-this.props.min)}
+              height={this.props.height*(this.state.groupEndTimes[i]-this.state.groupStartTimes[i])/(this.props.max-this.props.min)}
               group={e}
             />
           )}

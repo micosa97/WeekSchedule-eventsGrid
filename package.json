@@ -5,15 +5,10 @@
     "start": "export NODE_ENV=development && webpack-dev-server --hot --inline --content-base ./public --history-api-fallback --port 3000"
   },
   "dependencies": {
-    "es6-promise": "^4.1.0",
-    "isomorphic-fetch": "^2.2.1",
-    "md5": "^2.2.1",
     "node-fetch": "^1.6.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-relay": "dev",
-    "react-router": "^3.0.0",
-    "react-router-relay": "^0.13.7"
+    "react-router": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -27,7 +22,6 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "http-server": "^0.8.5",
     "node-sass": "^4.0.0",
-    "relay-compiler": "dev",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1",

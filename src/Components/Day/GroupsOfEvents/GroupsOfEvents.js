@@ -4,8 +4,6 @@ export default class GroupsOfEvents extends React.Component {
   constructor(props) {
     super(props);
     let group = this.props.group;
-
-    console.log("xd");
     let max = this.findMaxNumberOfEventsInRow(group);
 
     group.sort((a, b) => {
@@ -85,7 +83,7 @@ export default class GroupsOfEvents extends React.Component {
                    width: -4+this.props.width/this.state.maxEventsInRow
 
                  }}>
-              {e.name}
+              <div className="name">{e.name}</div>
             </div>)}
         </div>
         {this.state.groupsOfEvents.map((e, i)=>
