@@ -1,10 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Day from "./Day/Day"
-//import '../styles/main.scss'
 import FakeData from "./../FakeData"
 
 
-class App extends Component {
+export default class RootView extends React.Component {
   constructor(){
     super();
     let selfWidth = (window.innerWidth || document.body.clientWidth)-50;
@@ -79,5 +78,5 @@ class App extends Component {
   }
 }
 
-export default App;
+
 
